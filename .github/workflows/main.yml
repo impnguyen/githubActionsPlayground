@@ -9,7 +9,7 @@ jobs:
       run: echo Hello, $USER!
       env:
         USER: 'Mani'
-    - name: Run a multi-line script
+    - name: Run a ${{secrets.SCRIPTTYPE}} script
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
